@@ -126,7 +126,7 @@ if prob_dist.shape[0]>1:
         y='Probability'
     )
     
-    st.altair_chart(d, use_container_width=True)
+    st.altair_chart(d)
 
     
 #option_poss_win
