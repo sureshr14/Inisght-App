@@ -16,7 +16,7 @@ st.title('Bet Goals')
 st.write('Matchday 28:')
 st.write('Bookmaker Odds:')
 df=pd.read_csv('Betdata27.csv')
-st.write(df[['Fixture:','Home win odds','Draw odds','Away win odds']])
+st.write(df[['Fixture:','Home win odds','Draw odds','Away win odds','Predicted Result']])
 
 #option = st.selectbox(
 #    'Which match would you like to bet on?',
@@ -25,7 +25,7 @@ st.write(df[['Fixture:','Home win odds','Draw odds','Away win odds']])
 
 #df2
 
-options_multi = st.multiselect('What fixtures would you like to bet on?', df['Fixture:'])
+options_multi = st.multiselect('What fixtures would you like to bet on? (We suggest betting on games predicted to end in draws)', df['Fixture:'])
 
 #st.write('You selected:', options_multi)
 
@@ -120,6 +120,7 @@ for i in range(2**len(options_multi)):
 prob_dist=prob_dist.sort_values(by='Winning',ascending=True)
 #prob_dist
 
+
 if prob_dist.shape[0]>1:   
     d=alt.Chart(prob_dist).mark_bar().encode(
         x='Winning',
@@ -127,6 +128,13 @@ if prob_dist.shape[0]>1:
     )
     
     st.altair_chart(d)
+    
+    expecval=0
+    
+    for i in range(prob_dist.shape[0]):
+        expecval=expecval+prob_dist.iloc[i,0]*prob_dist.iloc[i,1]
+    
+    'The expected value of your bets is '+str(round(expecval,2))+' dollars.'
 
     
 #option_poss_win
