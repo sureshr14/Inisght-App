@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run Firstapp.py
+web: sh setup.sh && streamlit run Bet_Goals.py
