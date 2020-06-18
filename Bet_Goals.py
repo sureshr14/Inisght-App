@@ -12,9 +12,16 @@ import pandas as pd
 import altair as alt
 
 st.title('Bet Goals')
+st.write('Bet goals is an app designed to help you make informed bets on soccer matches')
 
-st.write('Matchday 28:')
-st.write('Bookmaker Odds:')
+st.subheader('Suggested Betting Strategy:') 
+st.write('We suggest betting on games predicted by our model to end in a draw')
+
+st.subheader('Rationale:') 
+st.write('In the past 4 years, the bookmakers odds have always favoured either the home team or the away team. Not a single game has been backed by the bookmaker to end in a draw in this time frame. This systematic underestimation of the chances of a game ending in a draw lets the bookmaker overestimate the chances of a home win. To exploit this inefficiency, we built a model that can identify draws with 36% precision. Even though this means we will be wrong 2 out of 3 times, the odds on draws are have historically been high enough to give us around 20% return on investment.')
+
+st.subheader('Matchday 28:')
+st.subheader('Bookmaker Odds:')
 df=pd.read_csv('Betdata27.csv')
 st.write(df[['Fixture:','Home win odds','Draw odds','Away win odds','Predicted Result']])
 
