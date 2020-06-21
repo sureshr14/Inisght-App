@@ -9,20 +9,19 @@ Bet Goals is an app I created during my time as an Insight fellow to use soccer 
 ## Project Description
 ***
 ### Motivation
-In the past 4 years, the bookmakers odds have always favoured either the home team or the away team. Not a single game has been backed by the bookmaker to end in a draw in this time frame.\ 
+In the past 4 years, the bookmakers odds have always favoured either the home team or the away team. Not a single game has been backed by the bookmaker to end in a draw in this time frame. 
 <img src="Images/bookies_fav2.png" width="500"/>
 
 In this same time span, around 25% of the games have ended in a draw.\
-<img src="Images/bookies_fav2.png" width="500"/>
-![Results](/Images/Results.png)
+<img src="Images/Results.png" width="500"/>
 
 This systematic underestimation of the chances of a game ending in a draw lets the bookmaker overestimate the chances of a home win. Thus predicting draws precisely is the key to building a profitable betting strategy. To do this, we built a model that can identify draws with 36% precision. Even though this means we will be wrong 2 out of 3 times, the odds on draws have historically been high enough to give us around 20% return on investment.
 
 ### File Structure
 **Images folder:**-  Contains the images generated through EDA, modelling and model evaluation.\
-**Data folder:**-  Contains all the data used in the project.
-**Bet_Goals.py**- The streamlit-based app delpoyed on Heroku.
-**Data Cleaning.ipynb**-The Jupyter notebook that deals with cleaning and organizing data obtained from different sources.
+**Data folder:**-  Contains all the data used in the project.\
+**Bet_Goals.py**- The streamlit-based app delpoyed on Heroku.\
+**Data Cleaning.ipynb**-The Jupyter notebook that deals with cleaning and organizing data obtained from different sources.\
 **Multiple All vs One Classification**- The Jupyter notebook that contains the logistic regression models and betting strategy optimization.
 
 ## Modelling
@@ -37,7 +36,7 @@ The model was built in Python using pandas and scikit-learn libraries heavily. I
 The most important performance measure for our model is its accuracy in predicting draws. We compare the precision of our model with the baseline model of backing the bookmaker's favourite to win everytime.
 <img src="Images/model_performance.png" width="500"/>
 
-We can see that our model is 36% more precise in predicting draws as compared to the baseline model. \
+We can see that our model is 36% more precise in predicting draws as compared to the baseline model. 
 
 ### Feature Importance
 As expected, the three most important features for the model are the bookmakers odds for each of the three possible results. The fourth most important feature is the difference in points accumulated by the teams last season. This is a measure of difference between the home team and away team's performance last season.
@@ -52,6 +51,6 @@ I evaluated three possible betting strategies:\
 
 ## Contact
 ***
-You can reach me in the following ways:
+You can reach me in the following ways:\
 **Email:** sureshr14@gmail.com \
 **LinkedIn:** https://www.linkedin.com/in/sureshr14/ 
