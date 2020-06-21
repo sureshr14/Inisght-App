@@ -2,7 +2,7 @@
 
 Bet Goals is an app I created during my time as an Insight fellow to use soccer and betting related data to predict the result of matches in the English Premier League and identify which games to bet on. The English Premier League is watched by an audience of 1.35 billion people every year and around a billion pounds are bet on games every year. In this project we identify and exploit systemic inefficiencies in the bookmakers odds.
 
-**Link to web app:** https://betgoals.herokuapp.com/
+**Link to web app:** https://betgoals.herokuapp.com/ \
 **Link to presentation:** https://docs.google.com/presentation/d/1jJrTCnUXaHHfAmipQfUcQZxc6jPEwkKBx4CbW67AeO4/edit#slide=id.g8a6bea1bd9_0_53
 
 
@@ -10,7 +10,7 @@ Bet Goals is an app I created during my time as an Insight fellow to use soccer 
 ***
 ### Motivation
 In the past 4 years, the bookmakers odds have always favoured either the home team or the away team. Not a single game has been backed by the bookmaker to end in a draw in this time frame.\ 
-![Draws_EDA](/Images/bookies_fav2.png)
+![Draws_EDA](/Images/bookies_fav2.png =100x80)
 
 In this same time span, around 25% of the games have ended in a draw.\
 ![Results](/Images/Results.png)
@@ -18,9 +18,9 @@ In this same time span, around 25% of the games have ended in a draw.\
 This systematic underestimation of the chances of a game ending in a draw lets the bookmaker overestimate the chances of a home win. Thus predicting draws precisely is the key to building a profitable betting strategy. To do this, we built a model that can identify draws with 36% precision. Even though this means we will be wrong 2 out of 3 times, the odds on draws have historically been high enough to give us around 20% return on investment.
 
 ### File Structure
-**Images folder:**-  Contains the images generated through EDA, modelling and model evaluation.
+**Images folder:**-  Contains the images generated through EDA, modelling and model evaluation.\
 **Data folder:**-  Contains all the data used in the project.
-**Bet_Goals.py**- The streamlit-based app delpoyed on Heroku.\
+**Bet_Goals.py**- The streamlit-based app delpoyed on Heroku.
 **Data Cleaning.ipynb**-The Jupyter notebook that deals with cleaning and organizing data obtained from different sources.
 **Multiple All vs One Classification**- The Jupyter notebook that contains the logistic regression models and betting strategy optimization.
 
