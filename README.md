@@ -10,7 +10,7 @@ Bet Goals is an app I created during my time as an Insight fellow to use soccer 
 ***
 ### Motivation
 In the past 4 years, the bookmakers odds have always favoured either the home team or the away team. Not a single game has been backed by the bookmaker to end in a draw in this time frame.\ 
-![Draws_EDA](/Images/bookies_fav2.png =100x80)
+<img src="Images/bookies_fav2.png" width="100"/>
 
 In this same time span, around 25% of the games have ended in a draw.\
 ![Results](/Images/Results.png)
