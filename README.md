@@ -13,6 +13,7 @@ In the past 4 years, the bookmakers odds have always favoured either the home te
 <img src="Images/bookies_fav2.png" width="500"/>
 
 In this same time span, around 25% of the games have ended in a draw.\
+<img src="Images/bookies_fav2.png" width="500"/>
 ![Results](/Images/Results.png)
 
 This systematic underestimation of the chances of a game ending in a draw lets the bookmaker overestimate the chances of a home win. Thus predicting draws precisely is the key to building a profitable betting strategy. To do this, we built a model that can identify draws with 36% precision. Even though this means we will be wrong 2 out of 3 times, the odds on draws have historically been high enough to give us around 20% return on investment.
@@ -34,17 +35,17 @@ The model was built in Python using pandas and scikit-learn libraries heavily. I
 
 ### Model Evaluation
 The most important performance measure for our model is its accuracy in predicting draws. We compare the precision of our model with the baseline model of backing the bookmaker's favourite to win everytime.
-![Model_performance](/Images/model_performance.png)\
+<img src="Images/model_performance.png" width="500"/>
 
 We can see that our model is 36% more precise in predicting draws as compared to the baseline model. \
 
 ### Feature Importance
 As expected, the three most important features for the model are the bookmakers odds for each of the three possible results. The fourth most important feature is the difference in points accumulated by the teams last season. This is a measure of difference between the home team and away team's performance last season.
-![Draw_features](/Images/Feature_importance_draw.png)
+<img src="Images/Feature_importance_draw.png" width="500"/>
 
 ### Betting Strategy Evaluation
 I evaluated three possible betting strategies:\
-![Money](/Images/money_made.png)
+<img src="Images/money_made.png" width="500"/>
 * The baseline strategy (I) was to bet on the bookmaker's favourite on every game so far this season (286 games). This strategy would have resulted in us losing around 6% of our money so far this season. 
 * The second strategy (II) was to bet on every game and on the winner predicted by our model (286 games). Using this strategy would have resulted in us breaking even on our investment so far.
 * The third strategy (III) was to bet only on games the classifier predicts will end in a draw (69 games). This strategy would have resulted in us making a 22% return on our investments so far this season.
